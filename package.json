@@ -1,0 +1,36 @@
+{
+  "name": "@redneckz/node-terminator",
+  "version": "0.0.0",
+  "author": "Alexander Alexandrov",
+  "description": "NodeJS graceful shutdown utility",
+  "keywords": ["graceful", "shutdown"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redneckz/node-terminator"
+  },
+  "bugs": {
+    "url": "https://github.com/redneckz/node-terminator/issues"
+  },
+  "homepage": "https://github.com/redneckz/node-terminator",
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "scripts": {
+    "prepublish": "npm run eslint && npm run jest",
+    "pretest": "npm run eslint",
+    "test": "npm run jest && npm run coveralls",
+    "eslint": "eslint \"lib/**/*.js\" --cache --cache-location \"./.cache\"",
+    "jest": "cross-env NODE_ENV=test jest",
+    "coveralls": "coveralls < coverage/lcov.info"
+  },
+  "devDependencies": {
+    "chalk": "~2.4.2",
+    "coveralls": "~3.0.2",
+    "cross-env": "~5.2.0",
+    "eslint": "~5.3.0",
+    "eslint-config-airbnb-base": "~13.1.0",
+    "eslint-plugin-import": "~2.14.0",
+    "jest-cli": "~24.1.0",
+    "rimraf": "~2.6.3"
+  }
+}
