@@ -1,9 +1,12 @@
 {
   "name": "@redneckz/node-terminator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Alexander Alexandrov",
   "description": "NodeJS graceful shutdown utility",
-  "keywords": ["graceful", "shutdown"],
+  "keywords": [
+    "graceful",
+    "shutdown"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +17,9 @@
   },
   "homepage": "https://github.com/redneckz/node-terminator",
   "main": "lib/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "prepublish": "npm run eslint && npm run jest",
     "pretest": "npm run eslint",
