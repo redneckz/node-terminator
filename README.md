@@ -14,7 +14,7 @@ npm install --save @redneckz/node-terminator
 
 ## How-to
 
-1. Create *NodeTerminator* terminator instance and attach it to *NodeJS* process (several instances can be created and attached).
+Create *NodeTerminator* instance and attach it to *NodeJS* process (several instances can be created and attached).
 
 ```javascript
 const { NodeTerminator } = require('@redneckz/node-terminator');
@@ -26,7 +26,7 @@ nodeTerminator.attach(() => {
 });
 ```
 
-2. Decorate async jobs to control gracefull shutdown
+Decorate async jobs to control gracefull shutdown.
 
 ```javascript
 const {
